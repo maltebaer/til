@@ -2,13 +2,21 @@
 
 /* Write your own custom base styles here */
 
+h1 {
+    @apply text-5xl text-center text-accent-1;
+}
+
+a {
+    @apply text-blue-500 no-underline;
+}
+
 /* Start purging... */
 @tailwind components;
 /* Stop purging. */
 
 /* Write your own custom component styles here */
 .btn-blue {
-  @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+    @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
 }
 
 /* Start purging... */
