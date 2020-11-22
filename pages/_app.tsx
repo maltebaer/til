@@ -1,4 +1,5 @@
 import "../styles/index.css";
+import "../styles/prism.css";
 
 import {AppProps} from "next/app";
 

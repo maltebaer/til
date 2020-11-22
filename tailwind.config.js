@@ -13,6 +13,21 @@ module.exports = {
                 "accent-1": "#333",
             },
         },
+        typography: {
+            default: {
+                css: {
+                    code: {
+                        "&::before": {
+                            display: "none",
+                        },
+                        "&::after": {
+                            display: "none",
+                        },
+                    },
+                    // ...
+                },
+            },
+        },
     },
     variants: {},
     plugins: [require("@tailwindcss/typography")],

@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
-import React from "react";
+import Prism from "prismjs";
+import React, {useEffect} from "react";
 
 import Nav from "./nav";
 
@@ -11,6 +12,10 @@ interface ILayoutProps {
 }
 
 export default function Layout({children, home}: ILayoutProps) {
+    useEffect(() => {
+        Prism.highlightAll();
+    }, []);
+
     return (
         <div className="container mx-auto px-4">
             <Head>
@@ -27,7 +32,7 @@ export default function Layout({children, home}: ILayoutProps) {
 
             <Nav />
 
-            <main className="prose mx-auto">{children}</main>
+            <main className="prose mx-auto language-markup">{children}</main>
 
             {!home && (
                 <footer>
