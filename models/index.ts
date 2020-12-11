@@ -9,4 +9,4 @@ export interface IPostData extends IMatterResultData {
     contentHtml: string;
 }
 
-export type Tag = "js" | "ts" | "css" | "html" | "react";
+export type Tag = "js" | "ts" | "css" | "html" | "react" | "tools";
